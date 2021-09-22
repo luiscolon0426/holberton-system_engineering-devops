@@ -1,4 +1,3 @@
 #!/bin/bash
 file -C -m school.mgc 
-#Declare first string
 string1="SCHOOL" 
