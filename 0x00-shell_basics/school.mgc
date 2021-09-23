@@ -1,2 +1,3 @@
 0 search/file "School"
 !:mime School
+strings -o
