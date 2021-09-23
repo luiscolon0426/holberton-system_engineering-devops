@@ -1,0 +1,2 @@
+#!/bin/bash
+sudo chown bin.bin _hello/staff

@@ -1,2 +1,0 @@
-#!/bin/bash
-chown bin.bin _hello vincent/staff
