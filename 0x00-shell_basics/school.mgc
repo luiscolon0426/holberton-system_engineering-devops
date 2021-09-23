@@ -1,5 +1,2 @@
-#!/bin/bash
-0 search/file "School"
-!:mime School
-strings -o
-strings file
+0 string SCHOOL School data
+!:mime Holberton
