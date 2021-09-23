@@ -1,2 +1,2 @@
 #!/bin/bash
-chmod 777 ls
+chmod 640 ls
