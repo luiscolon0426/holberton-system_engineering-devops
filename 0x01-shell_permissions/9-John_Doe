@@ -1,2 +1,2 @@
 #!/bin/bash
-echo chmod 713 hello
+chmod 713 hello
