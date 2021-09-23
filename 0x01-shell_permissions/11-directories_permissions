@@ -1,4 +1,4 @@
 #!/bin/bash
-chmod 111 ls 
-chmod 111 ls
-chmod 111 ls
+chmod 777 ls 
+chmod 777 ls
+chmod 777 ls
