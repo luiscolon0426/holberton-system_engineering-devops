@@ -1,3 +1,4 @@
 #!/bin/bash
-0 search/file/c "School"
-!:mime strings -t d SCHOOL 
+0 search/file "School"
+!:mime School
+ strings -o SCHOOL | less
