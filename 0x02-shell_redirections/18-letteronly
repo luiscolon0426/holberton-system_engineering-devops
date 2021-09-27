@@ -1,2 +1,2 @@
 #!/bin/bash
-grep -P [[:upper:]][[:lower:]] /etc/ssh/ssh_config
+grep -P '^[[:alpha:]]' /etc/ssh/ssh_config
