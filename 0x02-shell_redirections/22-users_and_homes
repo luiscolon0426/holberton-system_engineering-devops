@@ -1,2 +1,2 @@
 #!/bin/bash
-grep cat /etc/passwd
+cut -d: -f1 /etc/passwd
