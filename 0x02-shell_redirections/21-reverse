@@ -1,2 +1,2 @@
 #!/bin/bash
-echo | rev
+echo rev | rev
