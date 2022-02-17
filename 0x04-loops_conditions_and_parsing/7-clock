@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 # Display clock
-
 HOUR=0
 while [ "$HOUR" -lt 13 ]; do
     echo "Hour: $HOUR"
