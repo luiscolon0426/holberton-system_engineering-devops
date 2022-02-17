@@ -8,4 +8,5 @@ while [ "$HOUR" -lt 13 ]; do
 		echo "$MINUTE"
 		let MINUTE=MINUTE+1
 		let HOUR=HOUR+1
-	done
+        done
+done
