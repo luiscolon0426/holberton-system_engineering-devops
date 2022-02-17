@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+# The famous FizzBuzz
+
+words[3]=Fizz
+words[5]=Buzz
+for i in {1..100}; do
+	output=""
+	# iterate array indexes
+	for index in "${!words[@]}"; do
+		if (($i % $index == 0 )); then output+="${words[$index]}"; fi
+	done  
+	if [ -z $output ]; then output=$i; fi
+	printf "%s\n" $output
+done
