@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# Display ls
+
+list="$(ls)"
+for a in $list; do
+    echo "$a" | cut -d '-' -f 2
+done
