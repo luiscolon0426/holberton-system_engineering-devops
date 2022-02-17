@@ -7,6 +7,6 @@ while [ "$HOUR" -lt 13 ]; do
 	while [ "$MINUTE" -lt 60 ]; do
 		echo "$MINUTE"
 		let MINUTE=MINUTE+1
-		let HOUR=HOUR+1
         done
+		let HOUR=HOUR+1
 done
