@@ -5,7 +5,6 @@ i=0
 while [ $i -le 20 ]
 do
   echo $i
-
   case $i in
       4)
           echo "bad luck from China"
