@@ -1,12 +1,15 @@
 #!/usr/bin/env bash
 # Display clock
-HOUR=0
-while [ "$HOUR" -lt 13 ]; do
-	echo "Hour: $HOUR"
-	MINUTE=1
-	while [ "$MINUTE" -lt 60 ]; do
-		echo "$MINUTE"
-		let MINUTE=MINUTE+1
+hour=0
+while [ "$hour" -lt 13 ]; 
+do
+	echo "Hour: $minute"
+	minute=1
+        while [ "$minute" -lt 60 ];
+         do
+		    echo "$minute"
+		    minute=$(( minute + 1))
         done
-		let HOUR=HOUR+1
+        minute=1
+		hour=$(( hour + 1))
 done
