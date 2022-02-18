@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+# Bash script that creates a file containing pid, yara, yara and deletes de file
+file="/var/run/myscript.pid"
+echo $$ > "$file"
+
+while :
+do
+	echo "To infinity and beyond"
+	sleep 2
+	
+	trap 'echo "I hate the kill command"; rm -rf "$file"; exit' SIGTERM
+	trap 'echo "Y U n love me?!"' SIGINT
+	trap 'rm -rf "$file"; exit' SIGQUIT
+done
