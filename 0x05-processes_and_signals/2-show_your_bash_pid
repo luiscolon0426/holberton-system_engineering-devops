@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# Script that show processes and shows only bash word, without using grep
+ps -f -aux | grep "bash"
