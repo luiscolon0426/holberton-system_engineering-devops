@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# have custom 404 page that contains a string
+
+sudo apt-get update
+sudo apt-get -y install nginx
+touch /var/www/html/404.html
+sudo echo "Ceci n'est pas une page" | sudo tee "/var/www/html/404.html"
+sed -i "24 i \\\terror_page 404 /404.html;" /etc/nginx/sites-enabled/default
+sudo service nginx restart
