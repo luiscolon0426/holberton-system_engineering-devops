@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Run Apache and return a page with Hello World
+
+sudo service apache2 start
