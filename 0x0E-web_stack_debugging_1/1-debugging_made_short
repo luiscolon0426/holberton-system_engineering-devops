@@ -1,4 +1,4 @@
-#!/ust/bin/ env bash
+#!/ust/bin/env bash
 
 sudo /bin/cp -rf /etc/nginx/sites-available/default /etc/nginx/sites-enabled
 sudo service nginx restart
