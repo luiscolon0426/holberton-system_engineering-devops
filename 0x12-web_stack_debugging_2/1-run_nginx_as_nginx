@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# Fixes a container such that:
+# -nginx must run as nginx user
+# -nginx must listen on all active IPs on port 8080
+
+chown nginx:nginx /etc/nginx/nginx.conf
+sudo chmod 744 /etc/nginx/nginx.conf
+sed -i 's/80 default_server/8080 default_server/' /etc/nginx/sites-available/default
+sudo pkill -f apache2
+sudo -u nginx service nginx start
