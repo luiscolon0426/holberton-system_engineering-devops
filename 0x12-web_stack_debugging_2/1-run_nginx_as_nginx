@@ -3,8 +3,8 @@
 # -nginx must run as nginx user
 # -nginx must listen on all active IPs on port 8080
 
-sudo sed -i "s/#user www-data/user nginx/g" /etc/nginx/nginx.conf
-sudo sed -i "s/80/8080/g" /etc/nginx/sites-enable/default
-sudo chmod 644 /etc/nginx/nginx.conf
-sudo pkill apache2
+pkill apache2
+chown nginx:nginx /etc/nginx/nginx.conf
+chmod 777 /etc/nginx/nginx.conf
+sed -i 's/80/8080/g' /etc/nginx/sites-available/default
 sudo -u nginx service nginx start
